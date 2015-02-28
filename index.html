@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Find location of Swiss Maps: zumbo.georeferencer.com</title>
+    <meta name="author" content="Petr Pridal">
+  </head>
+  <body>
+
+    <!--
+    1bfYO3Th1oK275CAJ6oifEr6yvPYfL17jhvvYZSdV
+    1OFyj2R1TOIYAjsdgsYzPDcNffKrOlm_Ec9N_JprC
+    openglam
+    -->
+
+    <h1>Find location of Swiss maps</h1>
+
+    Prepare a text for the openglam to stress:
+    <ul>
+      <li>Interest in history and old maps? A bit of free time?
+      <li>Time-limited openglam with just over xxx maps. Help now!
+      <li>Maps becomes more attractive (3d visualizations) and discoverable (geographical search such as OldMapsOnline.org)
+      <li>Rewarding. Your name appears on the library website - there is public competition. Every control point you add brings the openglam forward and pushes your name to the top!
+      <li>A symbolic prize for the winner?
+    </ul>
+    Read <a href="http://www.dlib.org/dlib/march10/holley/03holley.html">this article on D-Lib</a> about successful crowdsourcing projects and reasons for success.
+
+    Prepare a website where you include the gadgets (copy&amp;paste HTML snippets from this page) and let us know the final public URL of that page. We will forward people from zumbo.georeferencer.com to your openglam website.
+    <p/>
+
+    Data for finished maps in Google Fusion Tables:
+    <a href="http://www.google.com/fusiontables/DataSource?docid=1bfYO3Th1oK275CAJ6oifEr6yvPYfL17jhvvYZSdV">1bfYO3Th1oK275CAJ6oifEr6yvPYfL17jhvvYZSdV</a>
+    <p/>
+
+    Data for number of control points (map revisions) in Google Fusion Tables - updated live
+    <a href="http://www.google.com/fusiontables/DataSource?docid=1OFyj2R1TOIYAjsdgsYzPDcNffKrOlm_Ec9N_JprC">1OFyj2R1TOIYAjsdgsYzPDcNffKrOlm_Ec9N_JprC</a>
+
+
+    <h3>Let's start: Link to get a random map</h3>
+
+    <a href="http://zumbo.georeferencer.com/random" style="display:block; width:500px; text-align:center; background:#eee; border: 1px solid #ccc; padding:30px;">  Get one of the maps and try to find its location  </a>
+
+    <h3>Progress of the openglam:</h3>
+
+    <iframe src="http://zumbo.georeferencer.com/api/gadgets/progressbar/zumbo" width="800" height="160" frameBorder="0"></iframe>
+
+    <!--
+    <p>or only from the collection 'openglam':</p>
+    
+    <iframe src="http://zumbo.georeferencer.com/api/gadgets/progressbar/zumbo/openglam" width="800" height="150" frameBorder="0"></iframe>
+    -->
+
+    <h3>Top contributors - competition</h3>
+
+    <iframe width="300px" height="200px" scrolling="no" frameborder="no" src="http://zumbo.georeferencer.com/api/gadgets/top-contributors/table/zumbo"></iframe>
+
+    <h3>Recently modified maps (unreliable widget):</h3>
+
+    <iframe src="http://zumbo.georeferencer.com/gadgets/thumbslider/index.html?col=zumbo&sql=SELECT+id,date_time,title,thumbnail+FROM+1bfYO3Th1oK275CAJ6oifEr6yvPYfL17jhvvYZSdV+WHERE+status+=+'georeferenced'+ORDER+BY+date_time+DESC" width="800" height="260" frameBorder="0"></iframe>
+
+    <!--
+    <p>or only from the collection 'openglam':</p>
+    
+    <iframe src="http://zumbo.georeferencer.com/gadgets/thumbslider/index.html?col=zumbo&sql=SELECT+id,date_time,title,thumbnail+FROM+1bfYO3Th1oK275CAJ6oifEr6yvPYfL17jhvvYZSdV+WHERE+status+=+'georeferenced'+AND+collection+=+'openglam'+ORDER+BY+date_time+DESC" width="800" height="260" frameBorder="0"></iframe>
+    -->
+
+    <h3>Map finder (unreliable widget):</h3>
+
+    <iframe width="800" height="500" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col7+from+1bfYO3Th1oK275CAJ6oifEr6yvPYfL17jhvvYZSdV&amp;viz=MAP&amp;h=false&amp;lat=10&amp;lng=0&amp;t=1&amp;z=2&amp;l=col7&amp;y=2&amp;tmplt=2"></iframe>
+
+    <!-- 
+    <p>or only from the collection 'openglam':</p>
+    
+    <iframe src="http://www.google.com/fusiontables/embedviz?viz=MAP&q=select+col7+from+1bfYO3Th1oK275CAJ6oifEr6yvPYfL17jhvvYZSdV+WHERE+collection+=+'openglam'&h=false&lat=50&lng=0&z=4&t=1&l=col7" width="800" height="500" frameBorder="0"></iframe>
+    -->
+
+    <h3>Top contributors pie chart (control points):</h3>
+
+    <iframe width="500px" height="380px" scrolling="no" frameborder="no" src="http://zumbo.georeferencer.com/api/gadgets/top-contributors/piechart/zumbo"></iframe>
+
+    <h3>All Contributors (unreliable widget)</h3>
+
+    <iframe width="500" height="600" scrolling="no" frameborder="no" src="https://fusiontables.googleusercontent.com/fusiontables/embedviz?viz=GVIZ&t=TABLE&containerId=gviz_canvas&q=select+col3%20as%20User,+SUM(col2)%20as%20Points+from+1OFyj2R1TOIYAjsdgsYzPDcNffKrOlm_Ec9N_JprC+group+by+col3+order+by+SUM(col2)+desc&width=500&height=600"></iframe>
+
+    <h3>Activity timeline (unreliable widget):</h3>
+
+    <iframe width="500px" height="300px" scrolling="no" frameborder="no" src="http://www.google.com/fusiontables/embedviz?gco_displayAnnotations=true&gco_wmode=opaque&containerId=gviz_canvas&rmax=250&q=select+col5%2C+SUM(col2)+from+1OFyj2R1TOIYAjsdgsYzPDcNffKrOlm_Ec9N_JprC+&qrs=where+col5+%3E%3D+&qre=+and+col5+%3C%3D+&qe=+group+by++col5+order+by+col5+asc&viz=GVIZ&t=TIMELINE&width=500&height=300"></iframe>
+
+
+    <h3>Network graph of contributions (people connected via maps - unreliable widget)</h3>
+
+    <iframe width="800" height="600" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?containerId=gviz_canvas&amp;viz=GVIZ&amp;t=GRAPH&amp;gc=true&amp;gd=false&amp;rmax=100000&amp;q=select+col3%2C+col0%2C+col2+from+1OFyj2R1TOIYAjsdgsYzPDcNffKrOlm_Ec9N_JprC&amp;qrs=+where+col3+%3E%3D+&amp;qre=+and+col3+%3C%3D+&amp;qe=&amp;state=%7B%22ps%22%3A%221_27_87_88_5_2t_4m_o_-e6_3g_u_-2j_-1g_2f_1o_-49_5r_2v_-2m_1w_-gy_8p_1a_56_-11_i_as_-2e_9_1p_0_1r_-24_-22_81_29_-3g_25_87_-5s_7b_-e0_2p_e_c_65_5l_-69_2n_31_-hs_-27_7o_6z_-44_3g_-ep_2w_3k_k4_-4n_6q_-14_n_26_81_-6c_7r_fh_-77_2z_h6_1k_24_35_3w_4n_1y_-4x_1y_-e2_48_2b_7e_8f_5e_7h_7v_4x_23_4w_23_-ey_3g_4k_8l_8z_x_-dk_3z_7a_-i_d_62_i_23_6k_2j_-1u_43_2e_-4j_3y_8z_7w_2r_-et_3y_4c_-dh_31_5f_5g_-d_6z_-dc_3i_6t_-1w_-p_2g_y_-3x_8b_6f_-4l_1j_1z_p_1v_-2y_-25_11_aa_-2z_a_j_3b_j_ap_-1m_6g_7o_8x_41_5y_-11_2v_-94_6m_37_-lo_-s_8z_1i_-53_7p_7n_-3o_64_-2v_-n_5c_v_-4l_6v_7v_7e_5p_-l9_7f_q_-13_1t_3p_jb_-4v_5w_3m_4z_y_-52_6r_k_-1u_4w_s_jf_7w_46_83_96_6e_2l_3q_3z_-3d_-1u_7i_w_-b_3e_-ej_4b_5u_-l9_2a_3b_do_6i_6j_3s_-1x_48_gf_14_1f_bl_-2q_7d_30_5j_5d_89_7a_2_-3_29_4u_8k_7c_7s_em_-71_4g_8u_7h_g_-6_6w_4h_8z_8w_2d_94_8m_2c_-3h_-15_7j_-45_9l_7l_-ji_47_56_14_-3g_8e_3d_-3g_7n_2h_5j_28_98_8c_2s_21_3y_12_90_-8g_h_9_4w_8p_n_-49_4_p_18_r_-5_19_3q_15_-53_18_-cf_8w_7c_3t_4h_83_38_-1o_5t_1n_5e_8c_7i_7g_2t_3g_5f_8g_-do_-7j_71_-86_6x_2a_-3k_-1i_8t_3p_-39_1x_-hp_7z_m_1r_4f_1u_3l_3w_1s_-2n_-2i_3l_kx_-41_5v_-m5_1s_82_7a_8u_3f_3s_46_n_3v_4s_3v_2r_5p_1q_25_5g_67_-6t_3h_47_u_-4x_68_3x_-2m_35_77_-5x_15_-2r_8x_2i_e_7i_1z_-fy_92_36_3p_59_3h_7r_99_30_gy_2l_v_-3d_-q_5b_8f_9c_2j_9b_81_6h_1p_3e_7v_3w_-2z_7q_-gg_9o_7w_-ao_99_6w_-k_2g_8q_fx_-67_33_3a_5o_42_bo_-1q_7g_3x_-2a_7h_-ig_-1b_87_-h7_-35_8d_-fx_8a_29_72_83_19_-d7_9q_2w_-9c_7r_8r_gm_-7d_3d_i7_24_4p_7z_72_c_17_1p_6f_-3d_-2b_52_97_7j_5a_-ha_9t_8s_-gn_-22_2l_-i4_8o_4m_-hx_9c_%22%2C%22cx%22%3A221.70718744477637%2C%22cy%22%3A-211.58544579751404%2C%22sw%22%3A1920.7319469274341%2C%22sh%22%3A962.5436740838162%2C%22z%22%3A-1.2515024640767454%7D&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;att=true&amp;width=800&amp;height=600"></iframe>
+
+    <!--
+    
+    <h3>Optional widgets (deprecated)</h3>
+    
+    <p>Top contributors - competition only from the collection 'openglam':</p>
+    
+    <iframe width="300px" height="200px" scrolling="no" frameborder="no" src="http://zumbo.georeferencer.com/api/gadgets/top-contributors/table/zumbo/openglam"></iframe>
+    
+    <p>All Contributors from the collection 'openglam' (unreliable openglam):</p>
+    
+    <iframe width="500" height="600" scrolling="no" frameborder="no" src="https://fusiontables.googleusercontent.com/fusiontables/embedviz?viz=GVIZ&t=TABLE&containerId=gviz_canvas&q=select+col3%20as%20User,+SUM(col2)%20as%20Points+from+1OFyj2R1TOIYAjsdgsYzPDcNffKrOlm_Ec9N_JprC+where+collection+=+'openglam'+group+by+col3+order+by+SUM(col2)+desc&width=500&height=600"></iframe>
+    
+    <p>Top contributors pie chart only from the collection 'openglam':</p>
+    
+    <iframe width="500px" height="380px" scrolling="no" frameborder="no" src="http://zumbo.georeferencer.com/api/gadgets/top-contributors/piechart/zumbo/openglam"></iframe>
+    
+    -->
+
+  </body>
+</html>
